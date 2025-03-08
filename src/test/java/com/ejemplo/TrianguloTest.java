@@ -22,4 +22,13 @@ public class TrianguloTest {
         double expectedArea = 9.0;
         assertEquals(expectedArea, triangulo.calcularArea(base, altura), 0.0001);
     }
+    
+    @Test
+    public void testCalcularPerimetro() {
+     Triangulo triangulo = new Triangulo();
+        double perimetro = triangulo.calcularPerimetro(3, 4, 5);
+        assertEquals(12, perimetro, 0.0001);
+    }
+
+    
 }
